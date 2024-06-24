@@ -166,10 +166,10 @@ body {
 
 .about-img img {
     padding-bottom: 20%;
-    max-width: 658px;
+    max-width: 650px;
     height: auto;
     width: 130%;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 .about-text h2 {
