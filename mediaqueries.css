@@ -1,0 +1,44 @@
+/* Mobile Devices (Portrait) */
+@media (max-width: 480px) {
+  body {
+      font-size: 14px;
+  }
+  .container {
+      padding: 10px;
+  }
+  .skills, .projects, .contact {
+      flex-direction: column;
+  }
+}
+
+/* Tablets (Portrait) */
+@media (max-width: 768px) {
+  body {
+      font-size: 16px;
+  }
+  .skills, .projects, .contact {
+      flex-direction: column;
+  }
+}
+
+/* Tablets (Landscape) */
+@media (max-width: 1024px) {
+  body {
+      font-size: 18px;
+  }
+  .header, .footer {
+      flex-direction: column;
+      text-align: center;
+  }
+}
+
+/* Small Desktops */
+@media (max-width: 1200px) {
+  body {
+      font-size: 18px;
+  }
+  .header, .footer {
+      flex-direction: column;
+      text-align: center;
+  }
+}
