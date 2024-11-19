@@ -76,14 +76,6 @@ $(document).ready(function () {
         alert("Form Submitted Successfully, your email client will open shortly!");
     });
 
-    
-    
-    
-    
-    
-    
-    
-
     // <!-- emailjs to mail contact form data -->
 
 });
@@ -94,18 +86,18 @@ document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
             document.title = "Portfolio | J Praneeth Naga Sai Narayan";
-            $("#favicon").attr("href", "assets/images/favicon.png");
+            $("#favicon").attr("href", "assets\images\praneeth.png");
         }
         else {
             document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "assets/images/favhand.png");
+            $("#favicon").attr("href", "assets\images\praneeth.png");
         }
     });
 
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["RPA Core Team Member","frontend development", "android development"],
+    strings: ["RPA Core Team Member","Frontend development", "Android development"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
