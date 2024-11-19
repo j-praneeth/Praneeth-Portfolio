@@ -57,7 +57,7 @@ $(document).ready(function () {
     $("#contact-form").submit(function (event) {
         event.preventDefault();
     
-        // Get the input values from the form
+        // Getting the input values from the form
         const name = $("input[name='name']").val();
         const email = $("input[name='email']").val();
         const phone = $("input[name='phone']").val();
