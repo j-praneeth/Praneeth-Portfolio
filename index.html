@@ -4,269 +4,481 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="Assets\Capture.ico">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <meta name="keywords" content="jigar sable, portfolio, jigar, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+    <meta name="description" content="Welcome to Jigar's Portfolio. Full-Stack Web Developer and Android App Developer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="assets\images\2.png" type="image/x-png">
+    <title>Portfolio | J Praneeth Naga Sai Narayan</title>
 </head>
-<body>
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+<body oncontextmenu="return false">
 
+<!-- pre loader -->
+<!-- <div class="loader-container">
+  <img draggable="false" src="./assets/images/preloader.gif" alt="">
+</div> -->
+
+<!-- navbar starts -->
+<header>
+        <a href="/" class="logo"><i class="fab fa-node-js"></i> J Praneeth </a>
+
+        <div id="menu" class="fas fa-bars"></div>
         <nav class="navbar">
-            <a href="index.html" style="--i:1" class="active">Home</a>
-            <a href="#about" style="--i:2">About</a>
-            <a href="#Skills" style="--i:3">Skill</a>
-            <a href="#projects" style="--i:4">Certifications</a>
-            <a href="#latest-projects" style="--i:3">Projects</a>
-            <a href="#contact" style="--i:5">Contact</a>
+            <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-    </header>
-    <section class="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>J Praneeth Naga Sai Narayan</h1>
-            <br>
-            <h3>And I'm a <span class="text"></span></h3>
-            <p>
-                2nd Year Student in CSE(AIML) at ACE
-                Engineering College. I'm passionate about exploring the latest
-                technology and how they can be used to solve real-world problems.
-                I have learned skills such as Java, Python, C, Data Structures, HTML, CSS, JavaScript, UiPath(RPA).
-                In my free time, I enjoy listening to podcasts and spending time
-                with my friends and family. Nice to meet you!
-              </p>
-            <div class="home-sci">
-                <a href="https://www.linkedin.com/in/praneeth-j/" style="--i:7"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/j-praneeth" style="--i:8"><i class='bx bxl-github'></i></a>
-                <a href="mailto:praneeth.janjanam@gmail.com" style="--i:9"><i class='bx bxl-gmail'></i></a>
-                
+</header>
+<!-- navbar ends -->
 
-            </div>
-            <a href="#about" class="btn-box">More About Me</a>
-        </div>
-    </section>
 
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="Assets\2.png">
-        </div>
-        <div class="about-text">
-            <h2>About <span>Me</span></h2>
-            <h4>Student</h4>
-            <p>I am a person with a lot of enthusiasm to learn new things and I follow the motto "Live Life to the Fullest."
-                I mainly believe that hard work really matters in our progress.
-                I am always keen to learn new things whenever I get a chance.
-                My short-term goal is to be placed in reputed MNC company where I canutilise my skills and knowledge for the upliftment of company and where I willget learning environment to boost my career.</p>
-             <br>
-               <a href="#" onclick="window.open('Assets\\Praneeth Resume.pdf')" class="btn-box">Download CV</a>
-        </div>
-    </section>
-   
-    <div>
-        <h2>Browse My Recent</h2>
-        <h1 class="title"><span>Certifications</span></h1>
+<!-- hero section starts -->
+<section class="home" id="home">
+    <div id="particles-js"></div>
+
+    <div class="content">
+    <h2>Hi There,<br/> I'm J Praneeth Naga Sai <span>Narayan</span></h2>
+    <p>i am into <span class="typing-text"></span></p>
+    <a href="#about" class="btn"><span>About Me</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </a>
+    <div class="socials">
+        <ul class="social-icons">
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/praneeth-j" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+          <li><a class="github" aria-label="GitHub" href="https://github.com/j-praneeth" target="_blank"><i class="fab fa-github"></i></a></li>
+          <!-- <li><a class="twitter" aria-label="Twitter" href="https://www.instagram.com/techoverflows" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a class="telegram" aria-label="Telegram" href="https://www.instagram.com/techoverflows" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/techoverflows"><i class="fab fa-instagram" target="_blank"></i></a></li>
+          <li><a class="dev" aria-label="Dev" href="https://www.instagram.com/techoverflows" target="_blank"><i class="fab fa-dev"></i></a></li> -->
+        </ul>
+      </div>
     </div>
-
-    <section id="projects" class="project-container">
-
-              <div class="article-container">
-                <img
-                  src="Certificates\Cisco Certification1.png"
-                  alt="Project 1"
-                  class="project-img"
-                />
-                <h2 class="experience-sub-title project-title">Cisco Certification</h2>
-              </div>
-
-              <div class="article-container">
-                <img
-                  src="Certificates\Citizen Developer Foundation Certificate.png"
-                  alt="Project 2"
-                  class="project-img"
-                />
-                <h2 class="experience-sub-title project-title">Citizen Developer Foundation Certificate</h2>
-              </div>
-              <br>         
-    </section>
-
-    <div class="btn-container">
-        <a href="Certifications.html" class="btn-box">View More Certificates</a>
-    </div>
-      
-    <br><br><br><br><br>
-      <h1 class="sub-title">My <span>Skills</span></h1>
-      <section>
-        <div class="container1" id="Skills">
-            <h1 class="heading1">Technical SKills</h1>
-            <div class="Technical-bars">
-                <div class="bar"><i style="color: #c95d2e;" class='bx bxl-html5'></i>
-                    <div class="info">
-                        <span>HTML</span>
-                    </div>
-                    <div class="progress-line html">
-                        <span></span>
-                    </div>
-                </div>
-                <br>
-                <div class="bar"><i  style="color: #147bbc;" class='bx bxl-css3'></i>
-                    <div class="info">
-                        <span>CSS</span>
-                    </div>
-                    <div class="progress-line CSS">
-                        <span></span>
-                    </div>
-                </div>
-                <br>
-                <div class="bar"><i  style="color: #b0bc1e;" class='bx bxl-javascript'></i>
-                    <div class="info">
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="progress-line JavaScript">
-                        <span></span>
-                    </div>
-                </div>
-                <br>
-                <div class="bar"><i  style="color: #c32ec9;" class='bx bxl-python'></i>
-                    <div class="info">
-                        <span>Python</span>
-                    </div>
-                    <div class="progress-line Python">
-                        <span></span>
-                    </div>
-                </div>
-                <br>
-                <div class="bar"><i  style="color: #69bcbc;" class='bx bxl-c-plus-plus'></i>
-                    <div class="info">
-                        <span>C</span>
-                    </div>
-                    <div class="progress-line C">
-                        <span></span>
-                    </div>
-                </div>
-                <br>
-                <div class="bar"><i  style="color: #c95d2e;" class='bx bxl-java' ></i>
-                    <div class="info">
-                        <span>Java</span>
-                    </div>
-                    <div class="progress-line Java">
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="container1">
-            <h1 class="heading1">Professional Skills</h1>
-            <div class="radial-bars">
-        
-                <div class="radial-bar">
-                <svg x="0px" y="0px" viewbox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">100%</div>
-                <div class="text">Creativity</div>
-               </div>
-        
-               <div class="radial-bar">
-                <svg x="0px" y="0px" viewbox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">90%</div>
-                <div class="text">Communication</div>
-                </div>
-        
-                <div class="radial-bar">
-                <svg x="0px" y="0px" viewbox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">100%</div>
-                <div class="text">Problem Solving</div>
-                </div>
-        
-                <div class="radial-bar">
-                <svg x="0px" y="0px" viewbox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">90%</div>
-                <div class="text">Team Work</div>
-                </div>
-        
-                <div class="radial-bar">
-                <svg x="0px" y="0px" viewbox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">100%</div>
-                <div class="text">Leadership</div>
-                </div>
-            </div>
-        </div>
-      </section>
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <h1 class="sub-title">Latest <span>Projects</span></h1>
+<div class="image">
+    <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="">
+</div>
+</section>
+<!-- hero section ends -->
 
 
-      <section class="about" id="latest-projects">
-        <div class="about-img">
-            <img src="Assets\Project.png">
-        </div>
-        <div class="about-text">
-            <h2>About <span>Projects</span></h2>
-            <br><br><br><br><br>
-            <p>I have created the Movie Rating Bot, Certificate Generator Bot, Resume Builder Bot and ID Card Generator Bot of our College by using Uipath. And the main Project I did is I have created Attendance Bot for our College
-                And now I am presently working on Voice Assistant using pythin and AI tools.
-            </p>
-             <br>
-            <a href="https://github.com/j-praneeth" class="btn-box">For More Projects</a>
-        </div>
-    </section>
-
-      <section id="contact">
-        <h3>Get in Touch</h3>
-        <h1 class="sub-title">Contact <span>Me</span></h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img
-                    src="Assets/email.png"
-                    alt="Email icon"
-                    class="icon contact-icon email-icon"
-                />
-                <p><a href="mailto:praneeth.janjanam@gmail.com" style="text-decoration:none" ><span style="color: white;">praneeth.janjanam@gmail.com</span></a></p>
-            </div>
-            <div class="contact-info-container">
-                <img
-                    src="Assets/linkedin.png"
-                    alt="LinkedIn icon"
-                    class="icon contact-icon"
-                />
-                <p><a href="https://www.linkedin.com/in/praneeth-j/" style="text-decoration:none"  target="_blank" rel="noopener noreferrer"><span style="color: white;">LinkedIn</span></a></p>
-            </div>
-        </div>
-    </section>
-    <br><br><br>
-
-    <footer class="footer">
-
-        <nav class="navbar">
-            <a href="index.html" style="--i:1" class="active">Home</a>
-            <a href="#about" style="--i:2">About</a>
-            <a href="#Skills" style="--i:3">Skill</a>
-            <a href="#projects" style="--i:4">Certifications</a>
-            <a href="#contact" style="--i:5">Contact</a>
-        </nav>
-    </footer>
+<!-- about section starts -->
+<section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
     
-<br><br><br><br><br>
+    <div class="row">
 
-    <script src="main.js"></script>
+    <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/imgg.avif" alt="">
+    </div>
+    <div class="content">
+        <h3>I'm J Praneeth Naga Sai Narayan</h3>
+        <span class="tag">RPA Core Team Member, Frontend Developer</span>
+        
+        <p>I am a person with a lot of enthusiasm to learn newthings and I follow the motto “Live Life to the Fullest.” 
+          I mainly believe that hard work really matters in ourprogress. I am always keen to learn new things whenever I get a chance. 
+          My short-term goal is to beplaced in reputed MNC company where I
+          I mercantilismmy skills and knowledge for the enlistment of companyand where I will get learning environment to boost my carrer.
+          </p>
+        
+        <div class="box-container">
+            <!-- <div class="box">
+              <p><span> age: </span> 20</p>
+              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
+            </div> -->
+            <div class="box">
+              <p><span> email : </span> praneeth.janjanam@gmail.com</p>
+            </div>
+        </div>
+        
+        <div class="resumebtn">
+            <a href="https://drive.google.com/file/d/157pr6DJDIF1uz9Udg0cKO2tVit75mPqj/view?usp=drive_link" target="_blank" class="btn"><span>Resume</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+    </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+<!-- skills section starts -->
+<section class="skills" id="skills">
+
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+    <div class="container">
+          <div class="row" id="skillsContainer">
+
+            <div class="bar">
+              <div class="info">
+                <img src="assets\images\Flutter.png"/>
+                <span>Flutter</span>
+              </div>
+            </div>
+
+            <div class="bar">
+              <div class="info">
+                <img src="assets\images\kotlin.png"/>
+                <span>Kotlin</span>
+              </div>
+            </div>
+
+            <div class="bar">
+              <div class="info">
+                <img src="assets\images\android-os.png"/>
+                <span>Android</span>
+              </div>
+            </div>
+
+            <div class="bar">
+              <div class="info">
+                <img src="assets\images\mongodb.png"/>
+                <span>MongoDB</span>
+              </div>
+            </div>
+
+            <div class="bar">
+              <div class="info">
+                <img src="assets\images\java-coffee-cup-logo--v1.png"/>
+                <span>Java</span>
+              </div>
+            </div>
+
+            <div class="bar">
+              <div class="info">
+                <img src="assets\images\c-plus-plus-logo.png"/>
+                <span>C++</span>
+              </div>
+            </div>
+
+            <div class="bar">
+              <div class="info">
+                <img src="assets\images\github.png"/>
+                <span>Github</span>
+              </div>
+            </div>
+
+      </div>
+</div>
+</section>
+<!-- skills section ends -->
+
+
+<!-- education section starts -->
+<section class="education" id="education">
+
+  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+
+    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+
+    <div class="box-container">
+
+    <div class="box">
+        <div class="image">
+        <img draggable="false" src="assets\images\acelogo.png" alt="">
+        </div>
+        <div class="content">
+        <h3>Bachelor of Engineering in Computer Science Engineering(Artificial Intelligence and Machine Learning)</h3>
+        <p>ACE Engineering College</p>
+        <h4>2022-2026 | Pursuing</h4>
+        </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+      <img draggable="false" src="assets\images\Narayana jnr clg.jpg" alt="">
+      </div>
+      <div class="content">
+      <h3>State Board of Intermediate</h3>
+      <p>Narayana Junior College | SSC</p>
+      <h4>2020-2022 | Completed</h4>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+      <img draggable="false" src="assets\images\SSPS.jpg" alt="">
+      </div>
+      <div class="content">
+      <h3>High Schooling</h3>
+      <p>Sri Sai Public School | ICSE</p>
+      <h4>2015-2020 | Completed</h4>
+      </div>
+    </div>
+
+</div>
+</section>
+<!-- education section ends -->
+
+
+<!-- work project section starts -->
+<!-- <section class="work" id="work">
+
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+
+  <div class="box-container">
+
+    <div class="box tilt">
+      <img draggable="false" src="./assets/images/projects/portfolio1.PNG" alt="" />
+      <div class="content">
+        <div class="tag">
+        <h3>Portfolio Website</h3>
+        </div>
+        <div class="desc">
+          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
+          <div class="btns">
+            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+            <a href="https://github.com/jigar-sable/Portfolio-Website" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<div class="viewall">
+  <a href="/projects" class="btn"><span>View All</span>
+    <i class="fas fa-arrow-right"></i>
+</a>
+</div>
+
+</section> -->
+<!-- work project section ends -->
+
+<!-- experience section starts -->
+<section class="experience" id="experience">
+
+  <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
+
+  <br><br><br><br><br><br>
+
+  <div class="timeline">
+
+    <!-- <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2>Content Creator</h2>
+        </div>
+        <div class="desc">
+            <h3>techoverflows</h3>
+            <p>June 24- present</p>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container left">
+      <div class="content">
+        <div class="tag">
+          <h2>SEL-Internship</h2>
+        </div>
+        <div class="desc">
+            <h3>Frontend Flutter Developer</h3>
+            <p>2024 | Ongoing</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container left">
+      <div class="content">
+        <div class="tag">
+          <h2>Student</h2>
+        </div>
+        <div class="desc">
+            <h3>CSE(AI&ML)</h3>
+            <p>2022 - 2026 | Persuing</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2>Coaching</h2>
+        </div>
+        <div class="desc">
+            <h3>Sky Coding Institute</h3>
+            <p>June 24 - present</p>
+        </div>
+      </div>
+    </div> -->
+
+    <br><br><br><br>
+  <div class="morebtn">
+    <!-- <a href="assets\images\404 error.png" class="btn"><span>View All</span> -->
+      <a href="#" class="btn"><span>View All</span>
+      <i class="fas fa-arrow-right"></i>
+  </a>
+  </div>
+
+</div>
+
+</section>
+<!-- experience section ends -->
+
+<!-- contact section starts -->
+
+
+<!-- contact section starts -->
+<section class="contact" id="contact">
+  
+  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="./assets/images/contact1.png" alt="">
+      </div>
+      <form id="contact-form">
+        <div class="form-group">
+          <div class="field">
+            <input type="text" name="name" placeholder="Name" required>
+            <i class='fas fa-user'></i>
+          </div>
+          <div class="field">
+            <input type="email" name="email" placeholder="Email" required>
+            <i class='fas fa-envelope'></i>
+          </div>
+          <div class="field">
+            <input type="text" name="phone" placeholder="Phone">
+            <i class='fas fa-phone-alt'></i>
+          </div>
+          <div class="message">
+            <textarea placeholder="Message" name="message" required></textarea>
+            <i class="fas fa-comment-dots"></i>
+          </div>
+        </div>
+        <div class="button-area">
+          <button type="submit" id="submit-btn">Submit <i class="fa fa-paper-plane"></i></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- contact section ends -->
+
+
+<!-- <section class="contact" id="contact">
+  
+  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="./assets/images/contact1.png" alt="">
+      </div>
+    <form id="contact-form">
+      
+      <div class="form-group">
+        <div class="field">
+          <input type="text" name="name" placeholder="Name" required>
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="email" placeholder="Email" required>
+          <i class='fas fa-envelope'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="phone" placeholder="Phone">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        <div class="message">
+        <textarea placeholder="Message" name="message" required></textarea>
+        <i class="fas fa-comment-dots"></i>
+        </div>
+        </div>
+      <div class="button-area">
+        <button type="submit">
+          Submit <i class="fa fa-paper-plane"></i></button>
+      </div>
+    </form>
+  </div>
+  </div>
+</section> -->
+<!-- contact section ends -->
+
+
+<!-- footer section starts -->
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Praneeth's Portfolio</h3>
+          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over Mail!</p>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i>+91 7993606582</p>
+          <p> <i class="fas fa-envelope"></i>praneeth.janjanam@gmail.com</p>
+
+          <div class="share">
+
+              <a href="https://www.linkedin.com/in/praneeth-j" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+              <a href="https://github.com/j-praneeth" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+              <a href="mailto:praneeth.janjanam@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              <!-- <a href="https://twitter.com/jigar_sable" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+              <a href="https://t.me/lifecode5" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a> -->
+          </div>
+      </div>
+  </div>
+
+  <h1 class="credit">Designed 
+    <!-- <i class="fa fa-heart pulse"></i> -->
+     by <a href="https://www.linkedin.com/in/praneeth-j"> J Praneeth</a></h1>
+
+</section>
+<!-- footer section ends -->
+
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- typed.js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- particle.js links -->
+<script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/app.js"></script>
+
+<!-- vanilla tilt.js links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- scroll reveal anim -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+<script src="./assets/js/script.js"></script>
+
 </body>
 </html>
