@@ -85,12 +85,12 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | J Praneeth Naga Sai Narayan";
-            $("#favicon").attr("href", "assets\images\praneeth.png");
+            document.title = "J Praneeth Naga Sai Narayan | Portfolio";
+            $("#favicon").attr("href", "assets\images\hero1.png");
         }
         else {
             document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "assets\images\praneeth.png");
+            $("#favicon").attr("href", "assets\images\hero1.png");
         }
     });
 
